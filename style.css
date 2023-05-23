@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    text-decoration: underline;
+    text-align: center;
+}
+
+h1 {
+    font-size: 4rem;
+    margin-bottom: 4rem;
+}
+
+h2 {
+    font-size: 3rem;
+    margin: 4rem 0 3rem 0;
+    color: brown;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: rgb(79, 187, 255);
+    color: white;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+.btn:hover {
+    opacity: .8;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    font-family: 'VT323', monospace;
+    max-width: 1440px;
+    min-width: 375px;
+    margin: 0 auto;
+}
+
+.container {
+    min-height: 100vh;
+}
+
+.fruit-list {
+    font-size: 4rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+.fruit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: .5rem;
+    overflow: hidden;
+    border: 2px dashed grey;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.fruit span {
+    align-self: center;
+    padding: 2rem 0;
+    font-size: 6rem;
+}
+
+.basket {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    font-size: 4rem;
+}
+
+.basket-fruit {
+    display: flex;
+    align-items: center;
+    gap: 9.5rem;
+    padding: .5rem;
+    margin-bottom: 1rem;
+    border: 2px dashed black;
+}
